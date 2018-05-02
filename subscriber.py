@@ -1,16 +1,16 @@
 import paho.mqtt.client as mqtt
 
 # Define Variables
-MQTT_BROKER = "MQTT Broker IP or DNS Name"
+MQTT_BROKER = "127.0.0.1"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 45
 MQTT_TOPIC = "testTopic"
 
 
 # Define on_connect event Handler
-def on_connect(mosq, obj, rc):
-	#Subscribe to a the Topic
-	mqttc.subscribe(MQTT_TOPIC, 0)
+def on_connect(self,mosq, obj, rc):
+	#Subscribe to a Topic
+	self.subscribe(MQTT_TOPIC, 0)
 
 # Define on_subscribe event Handler
 def on_subscribe(mosq, obj, mid, granted_qos):

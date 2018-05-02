@@ -2,7 +2,7 @@
 import paho.mqtt.client as mqtt
 
 # Define Variables
-MQTT_BROKER = "MQTT Broker IP or DNS Name"
+MQTT_BROKER = "127.0.0.1"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 45
 MQTT_TOPIC = "testTopic"
